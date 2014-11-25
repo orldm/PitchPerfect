@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("loaded ok from desktop")
+        //println("loaded ok from desktop")
     }
 
     override func didReceiveMemoryWarning() {
