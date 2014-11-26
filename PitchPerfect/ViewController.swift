@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var recordingInProgress: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +23,12 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func recordButton(sender: UIButton) {
+        recordingInProgress.hidden = false
+    }
+    
+    @IBAction func stopButton(sender: UIButton) {
+        recordingInProgress.hidden = true
+    }
 }
 
