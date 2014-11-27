@@ -58,12 +58,12 @@
                                 <exclude reference="fZk-Zr-lcU"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="ojg-Vk-03B"/>
-                                <exclude reference="t4j-OU-FwX"/>
+                                <exclude reference="aaW-WY-Ugl"/>
                                 <exclude reference="SYc-HY-XTB"/>
                                 <exclude reference="jqX-sk-MNh"/>
+                                <exclude reference="ojg-Vk-03B"/>
+                                <exclude reference="t4j-OU-FwX"/>
                                 <exclude reference="wCU-m7-Yu7"/>
-                                <exclude reference="aaW-WY-Ugl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -73,17 +73,19 @@
                                 <include reference="fZk-Zr-lcU"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="ojg-Vk-03B"/>
-                                <include reference="t4j-OU-FwX"/>
+                                <include reference="aaW-WY-Ugl"/>
                                 <include reference="SYc-HY-XTB"/>
                                 <include reference="jqX-sk-MNh"/>
+                                <include reference="ojg-Vk-03B"/>
+                                <include reference="t4j-OU-FwX"/>
                                 <include reference="wCU-m7-Yu7"/>
-                                <include reference="aaW-WY-Ugl"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="2Rc-Bj-Q3z" id="ZC2-7x-2yF"/>
                         <outlet property="recordingInProgress" destination="uT1-Aj-Lqz" id="p1G-tv-S8C"/>
+                        <outlet property="stopButton" destination="fZk-Zr-lcU" id="fxZ-et-aCq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

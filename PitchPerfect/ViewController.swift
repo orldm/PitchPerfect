@@ -11,10 +11,17 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var recordingInProgress: UILabel!
-
+    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var recordButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //println("loaded ok from desktop")
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        stopButton.hidden = true
+        recordButton.enabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +32,8 @@ class ViewController: UIViewController {
 
     @IBAction func recordButton(sender: UIButton) {
         recordingInProgress.hidden = false
+        stopButton.hidden = false
+        recordButton.enabled = false
     }
     
     @IBAction func stopButton(sender: UIButton) {
