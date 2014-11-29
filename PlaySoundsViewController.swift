@@ -28,6 +28,9 @@ class PlaySoundsViewController: UIViewController {
         
         let path = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") as String!
         audioPlayer = AVAudioPlayer(contentsOfURL: NSURL.fileURLWithPath(path), error: nil)
+        audioPlayer.stop()
+        audioPlayer.enableRate = true
+        audioPlayer.rate = 0.5
         audioPlayer.play()
         audioPlayer.updateMeters()
     }
