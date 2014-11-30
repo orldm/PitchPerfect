@@ -9,14 +9,19 @@
 import UIKit
 import AVFoundation
 
-class PlaySoundsViewController: UIViewController {
+class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate {
     
     var audioPlayer: AVAudioPlayer!
-
+    var path: String!
+    @IBOutlet weak var stopButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        path = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")
+        audioPlayer = AVAudioPlayer(contentsOfURL: NSURL.fileURLWithPath(path), error: nil)
+        audioPlayer.enableRate = true
+        audioPlayer.delegate = self
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,17 +29,35 @@ class PlaySoundsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func playSlow(sender: UIButton) {
-        
-        let path = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") as String!
-        audioPlayer = AVAudioPlayer(contentsOfURL: NSURL.fileURLWithPath(path), error: nil)
+    func playAudioWithRate(rate: Float) {
         audioPlayer.stop()
-        audioPlayer.enableRate = true
-        audioPlayer.rate = 0.5
+        audioPlayer.rate = rate
+        audioPlayer.currentTime = 0.0
         audioPlayer.play()
-        audioPlayer.updateMeters()
+        stopButton.hidden = false
+    }
+    
+    @IBAction func playSlow(sender: UIButton) {
+        playAudioWithRate(0.5)
+
     }
 
+    @IBAction func playFast(sender: UIButton) {
+        playAudioWithRate(2.0)
+
+    }
+    
+    @IBAction func stopPlaying(sender: UIButton) {
+        audioPlayer.stop()
+        stopButton.hidden = true
+
+    }
+    
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
+        stopButton.hidden = true
+    }
+    
+    
     /*
     // MARK: - Navigation
 
