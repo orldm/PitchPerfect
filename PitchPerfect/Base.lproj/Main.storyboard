@@ -8,7 +8,7 @@
         <!--Record-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="Record" id="vXZ-lx-hvc" customClass="ViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Record" id="vXZ-lx-hvc" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -159,12 +159,12 @@
                                 <exclude reference="uJm-og-iBP"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="cx3-mI-DLC"/>
-                                <exclude reference="ey1-77-16E"/>
+                                <exclude reference="IUf-zW-fS6"/>
                                 <exclude reference="Emt-yN-1nH"/>
                                 <exclude reference="dwY-VD-FOY"/>
+                                <exclude reference="cx3-mI-DLC"/>
+                                <exclude reference="ey1-77-16E"/>
                                 <exclude reference="gso-pz-tzr"/>
-                                <exclude reference="IUf-zW-fS6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -174,12 +174,12 @@
                                 <include reference="uJm-og-iBP"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="cx3-mI-DLC"/>
-                                <include reference="ey1-77-16E"/>
+                                <include reference="IUf-zW-fS6"/>
                                 <include reference="Emt-yN-1nH"/>
                                 <include reference="dwY-VD-FOY"/>
+                                <include reference="cx3-mI-DLC"/>
+                                <include reference="ey1-77-16E"/>
                                 <include reference="gso-pz-tzr"/>
-                                <include reference="IUf-zW-fS6"/>
                             </mask>
                         </variation>
                     </view>
