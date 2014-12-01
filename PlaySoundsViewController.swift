@@ -13,12 +13,18 @@ class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate {
     
     var audioPlayer: AVAudioPlayer!
     var path: String!
+    var receivedAudio: RecordedAudio!
+    
     @IBOutlet weak var stopButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        path = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")
-        audioPlayer = AVAudioPlayer(contentsOfURL: NSURL.fileURLWithPath(path), error: nil)
+//        path = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")
+//        audioPlayer = AVAudioPlayer(contentsOfURL: NSURL.fileURLWithPath(path), error: nil)
+//        audioPlayer.enableRate = true
+//        audioPlayer.delegate = self
+        
+        audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.fileURL, error: nil)
         audioPlayer.enableRate = true
         audioPlayer.delegate = self
 

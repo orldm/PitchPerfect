@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Record-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="Record" id="vXZ-lx-hvc" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Record" id="vXZ-lx-hvc" userLabel="Record Sounds View Controller" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -40,7 +40,6 @@
                                 <connections>
                                     <action selector="recordButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ceB-6b-gEG"/>
                                     <action selector="stopButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SEM-on-0iX"/>
-                                    <segue destination="0Ak-cO-7ZI" kind="show" id="1lo-Ai-DKu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -91,6 +90,7 @@
                         <outlet property="recordButton" destination="2Rc-Bj-Q3z" id="ZC2-7x-2yF"/>
                         <outlet property="recordingInProgress" destination="uT1-Aj-Lqz" id="p1G-tv-S8C"/>
                         <outlet property="stopButton" destination="fZk-Zr-lcU" id="fxZ-et-aCq"/>
+                        <segue destination="0Ak-cO-7ZI" kind="show" identifier="stopRecording" id="1cg-bt-Nd3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
