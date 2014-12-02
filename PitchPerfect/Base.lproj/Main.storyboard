@@ -38,7 +38,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="recordButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ceB-6b-gEG"/>
                                     <action selector="stopButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SEM-on-0iX"/>
                                 </connections>
                             </button>

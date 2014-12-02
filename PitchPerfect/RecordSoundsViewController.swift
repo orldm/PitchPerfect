@@ -39,13 +39,13 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         let formatter = NSDateFormatter()
         formatter.dateFormat = "ddMMyyyy-HHmmss"
         let recordName = formatter.stringFromDate(currentDateTime) + ".wav"
-        println(recordName)
+        //println(recordName)
         let pathArray = [dirPath, recordName]
         let filePath = NSURL.fileURLWithPathComponents(pathArray)
         
         var audioSession = AVAudioSession.sharedInstance()
         audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, error: nil)
-        //audioSession.setActive(true, error: nil) // wasn't in lesson
+        audioSession.setActive(true, error: nil)
         
         audioRecorder = AVAudioRecorder(URL: filePath, settings: nil, error: nil)
         audioRecorder.delegate = self
