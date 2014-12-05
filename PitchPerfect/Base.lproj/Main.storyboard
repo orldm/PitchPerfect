@@ -144,6 +144,15 @@
                                     <action selector="playFast:" destination="0Ak-cO-7ZI" eventType="touchUpInside" id="hZL-XP-f8v"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cO-XF-eOh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="DarthVaderButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playDarthVaderAudio:" destination="0Ak-cO-7ZI" eventType="touchUpInside" id="oUP-ba-eU3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -152,6 +161,9 @@
                             </constraint>
                             <constraint firstItem="RYB-nx-rsZ" firstAttribute="top" secondItem="uJm-og-iBP" secondAttribute="bottom" constant="25" id="IUf-zW-fS6">
                                 <variation key="widthClass=compact" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="6cO-XF-eOh" firstAttribute="top" secondItem="cjd-RP-d9B" secondAttribute="bottom" constant="186" id="P8q-8B-uVr">
+                                <variation key="widthClass=compact" constant="197"/>
                             </constraint>
                             <constraint firstItem="RMA-TP-uRw" firstAttribute="leading" secondItem="icA-de-cRO" secondAttribute="leadingMargin" constant="49" id="Qbb-ZC-hoy">
                                 <variation key="widthClass=compact" constant="30"/>
@@ -167,6 +179,7 @@
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="uJm-og-iBP" secondAttribute="centerX" id="gso-pz-tzr"/>
                             <constraint firstItem="RMA-TP-uRw" firstAttribute="top" secondItem="cjd-RP-d9B" secondAttribute="bottom" constant="197" id="pis-b2-1dj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6cO-XF-eOh" secondAttribute="trailing" constant="30" id="zk7-81-gor"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -174,14 +187,17 @@
                                 <exclude reference="uJm-og-iBP"/>
                                 <exclude reference="RMA-TP-uRw"/>
                                 <exclude reference="6wX-aD-Cqi"/>
+                                <exclude reference="6cO-XF-eOh"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="cx3-mI-DLC"/>
                                 <exclude reference="ey1-77-16E"/>
-                                <exclude reference="Emt-yN-1nH"/>
-                                <exclude reference="dwY-VD-FOY"/>
                                 <exclude reference="Qbb-ZC-hoy"/>
                                 <exclude reference="pis-b2-1dj"/>
+                                <exclude reference="Emt-yN-1nH"/>
+                                <exclude reference="dwY-VD-FOY"/>
+                                <exclude reference="P8q-8B-uVr"/>
+                                <exclude reference="zk7-81-gor"/>
                                 <exclude reference="gso-pz-tzr"/>
                                 <exclude reference="IUf-zW-fS6"/>
                             </mask>
@@ -192,14 +208,17 @@
                                 <include reference="uJm-og-iBP"/>
                                 <include reference="RMA-TP-uRw"/>
                                 <include reference="6wX-aD-Cqi"/>
+                                <include reference="6cO-XF-eOh"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="cx3-mI-DLC"/>
                                 <include reference="ey1-77-16E"/>
-                                <include reference="Emt-yN-1nH"/>
-                                <include reference="dwY-VD-FOY"/>
                                 <include reference="Qbb-ZC-hoy"/>
                                 <include reference="pis-b2-1dj"/>
+                                <include reference="Emt-yN-1nH"/>
+                                <include reference="dwY-VD-FOY"/>
+                                <include reference="P8q-8B-uVr"/>
+                                <include reference="zk7-81-gor"/>
                                 <include reference="gso-pz-tzr"/>
                                 <include reference="IUf-zW-fS6"/>
                             </mask>
@@ -234,6 +253,7 @@
     </scenes>
     <resources>
         <image name="ChipmunkButton" width="100" height="100"/>
+        <image name="DarthVaderButton" width="100" height="100"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="RabbitButton" width="100" height="100"/>
         <image name="SnailButton" width="100" height="100"/>

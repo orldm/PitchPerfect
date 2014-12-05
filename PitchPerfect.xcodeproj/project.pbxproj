@@ -68,7 +68,6 @@
 		F6F545461A20E62000BAF1FC = {
 			isa = PBXGroup;
 			children = (
-				F6A42AE91A2BBCF000331D2A /* AVFoundation.framework */,
 				F6F545511A20E62000BAF1FC /* PitchPerfect */,
 				F6F545671A20E62000BAF1FC /* PitchPerfectTests */,
 				F6F545501A20E62000BAF1FC /* Products */,
@@ -103,6 +102,7 @@
 		F6F545521A20E62000BAF1FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F6A42AE91A2BBCF000331D2A /* AVFoundation.framework */,
 				F6F545531A20E62000BAF1FC /* Info.plist */,
 			);
 			name = "Supporting Files";

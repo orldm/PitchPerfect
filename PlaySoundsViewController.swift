@@ -71,7 +71,11 @@ class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func playChipmunkAudio(sender: UIButton) {
         playAudioFileWithVariablePitch(1200)
-        
+    }
+    
+    
+    @IBAction func playDarthVaderAudio(sender: UIButton) {
+        playAudioFileWithVariablePitch(-600)
     }
     
     @IBAction func stopPlaying(sender: UIButton) {
