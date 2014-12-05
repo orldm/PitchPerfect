@@ -117,15 +117,6 @@
                                     <action selector="playSlow:" destination="0Ak-cO-7ZI" eventType="touchUpInside" id="oyO-gC-W0m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wX-aD-Cqi">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="RabbitButton">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playFast:" destination="0Ak-cO-7ZI" eventType="touchUpInside" id="hZL-XP-f8v"/>
-                                </connections>
-                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJm-og-iBP">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="StopButton">
@@ -135,50 +126,80 @@
                                     <action selector="stopPlaying:" destination="0Ak-cO-7ZI" eventType="touchUpInside" id="1gf-qd-feh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMA-TP-uRw">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="ChipmunkButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="0Ak-cO-7ZI" eventType="touchUpInside" id="PM2-pV-hLC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wX-aD-Cqi">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="RabbitButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playFast:" destination="0Ak-cO-7ZI" eventType="touchUpInside" id="hZL-XP-f8v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6wX-aD-Cqi" firstAttribute="trailing" secondItem="icA-de-cRO" secondAttribute="trailingMargin" id="Emt-yN-1nH">
-                                <variation key="widthClass=compact" constant="-20"/>
+                                <variation key="widthClass=compact" constant="-49"/>
                             </constraint>
                             <constraint firstItem="RYB-nx-rsZ" firstAttribute="top" secondItem="uJm-og-iBP" secondAttribute="bottom" constant="25" id="IUf-zW-fS6">
                                 <variation key="widthClass=compact" constant="32"/>
                             </constraint>
-                            <constraint firstItem="erQ-EE-b6a" firstAttribute="top" secondItem="cjd-RP-d9B" secondAttribute="bottom" constant="8" id="cx3-mI-DLC"/>
-                            <constraint firstItem="6wX-aD-Cqi" firstAttribute="top" secondItem="cjd-RP-d9B" secondAttribute="bottom" constant="8" id="dwY-VD-FOY"/>
+                            <constraint firstItem="RMA-TP-uRw" firstAttribute="leading" secondItem="icA-de-cRO" secondAttribute="leadingMargin" constant="49" id="Qbb-ZC-hoy"/>
+                            <constraint firstItem="erQ-EE-b6a" firstAttribute="top" secondItem="cjd-RP-d9B" secondAttribute="bottom" constant="8" id="cx3-mI-DLC">
+                                <variation key="widthClass=compact" constant="44"/>
+                            </constraint>
+                            <constraint firstItem="6wX-aD-Cqi" firstAttribute="top" secondItem="cjd-RP-d9B" secondAttribute="bottom" constant="8" id="dwY-VD-FOY">
+                                <variation key="widthClass=compact" constant="44"/>
+                            </constraint>
                             <constraint firstItem="erQ-EE-b6a" firstAttribute="leading" secondItem="icA-de-cRO" secondAttribute="leadingMargin" id="ey1-77-16E">
-                                <variation key="widthClass=compact" constant="20"/>
+                                <variation key="widthClass=compact" constant="49"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="uJm-og-iBP" secondAttribute="centerX" id="gso-pz-tzr"/>
+                            <constraint firstItem="RMA-TP-uRw" firstAttribute="top" secondItem="cjd-RP-d9B" secondAttribute="bottom" constant="197" id="pis-b2-1dj"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="erQ-EE-b6a"/>
-                                <exclude reference="6wX-aD-Cqi"/>
                                 <exclude reference="uJm-og-iBP"/>
+                                <exclude reference="RMA-TP-uRw"/>
+                                <exclude reference="6wX-aD-Cqi"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="IUf-zW-fS6"/>
-                                <exclude reference="Emt-yN-1nH"/>
-                                <exclude reference="dwY-VD-FOY"/>
                                 <exclude reference="cx3-mI-DLC"/>
                                 <exclude reference="ey1-77-16E"/>
+                                <exclude reference="Emt-yN-1nH"/>
+                                <exclude reference="dwY-VD-FOY"/>
+                                <exclude reference="Qbb-ZC-hoy"/>
+                                <exclude reference="pis-b2-1dj"/>
                                 <exclude reference="gso-pz-tzr"/>
+                                <exclude reference="IUf-zW-fS6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="erQ-EE-b6a"/>
-                                <include reference="6wX-aD-Cqi"/>
                                 <include reference="uJm-og-iBP"/>
+                                <include reference="RMA-TP-uRw"/>
+                                <include reference="6wX-aD-Cqi"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="IUf-zW-fS6"/>
-                                <include reference="Emt-yN-1nH"/>
-                                <include reference="dwY-VD-FOY"/>
                                 <include reference="cx3-mI-DLC"/>
                                 <include reference="ey1-77-16E"/>
+                                <include reference="Emt-yN-1nH"/>
+                                <include reference="dwY-VD-FOY"/>
+                                <include reference="Qbb-ZC-hoy"/>
+                                <include reference="pis-b2-1dj"/>
                                 <include reference="gso-pz-tzr"/>
+                                <include reference="IUf-zW-fS6"/>
                             </mask>
                         </variation>
                     </view>
@@ -210,6 +231,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ChipmunkButton" width="100" height="100"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="RabbitButton" width="100" height="100"/>
         <image name="SnailButton" width="100" height="100"/>
