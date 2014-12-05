@@ -148,12 +148,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6wX-aD-Cqi" firstAttribute="trailing" secondItem="icA-de-cRO" secondAttribute="trailingMargin" id="Emt-yN-1nH">
-                                <variation key="widthClass=compact" constant="-49"/>
+                                <variation key="widthClass=compact" constant="-30"/>
                             </constraint>
                             <constraint firstItem="RYB-nx-rsZ" firstAttribute="top" secondItem="uJm-og-iBP" secondAttribute="bottom" constant="25" id="IUf-zW-fS6">
                                 <variation key="widthClass=compact" constant="32"/>
                             </constraint>
-                            <constraint firstItem="RMA-TP-uRw" firstAttribute="leading" secondItem="icA-de-cRO" secondAttribute="leadingMargin" constant="49" id="Qbb-ZC-hoy"/>
+                            <constraint firstItem="RMA-TP-uRw" firstAttribute="leading" secondItem="icA-de-cRO" secondAttribute="leadingMargin" constant="49" id="Qbb-ZC-hoy">
+                                <variation key="widthClass=compact" constant="30"/>
+                            </constraint>
                             <constraint firstItem="erQ-EE-b6a" firstAttribute="top" secondItem="cjd-RP-d9B" secondAttribute="bottom" constant="8" id="cx3-mI-DLC">
                                 <variation key="widthClass=compact" constant="44"/>
                             </constraint>
@@ -161,7 +163,7 @@
                                 <variation key="widthClass=compact" constant="44"/>
                             </constraint>
                             <constraint firstItem="erQ-EE-b6a" firstAttribute="leading" secondItem="icA-de-cRO" secondAttribute="leadingMargin" id="ey1-77-16E">
-                                <variation key="widthClass=compact" constant="49"/>
+                                <variation key="widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="uJm-og-iBP" secondAttribute="centerX" id="gso-pz-tzr"/>
                             <constraint firstItem="RMA-TP-uRw" firstAttribute="top" secondItem="cjd-RP-d9B" secondAttribute="bottom" constant="197" id="pis-b2-1dj"/>
