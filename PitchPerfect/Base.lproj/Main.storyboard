@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ufo-CC-8X2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ufo-CC-8X2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -190,16 +191,16 @@
                                 <exclude reference="6cO-XF-eOh"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="cx3-mI-DLC"/>
-                                <exclude reference="ey1-77-16E"/>
-                                <exclude reference="Qbb-ZC-hoy"/>
-                                <exclude reference="pis-b2-1dj"/>
-                                <exclude reference="Emt-yN-1nH"/>
-                                <exclude reference="dwY-VD-FOY"/>
+                                <exclude reference="IUf-zW-fS6"/>
                                 <exclude reference="P8q-8B-uVr"/>
                                 <exclude reference="zk7-81-gor"/>
+                                <exclude reference="Emt-yN-1nH"/>
+                                <exclude reference="dwY-VD-FOY"/>
+                                <exclude reference="Qbb-ZC-hoy"/>
+                                <exclude reference="pis-b2-1dj"/>
+                                <exclude reference="cx3-mI-DLC"/>
+                                <exclude reference="ey1-77-16E"/>
                                 <exclude reference="gso-pz-tzr"/>
-                                <exclude reference="IUf-zW-fS6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -211,16 +212,16 @@
                                 <include reference="6cO-XF-eOh"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="cx3-mI-DLC"/>
-                                <include reference="ey1-77-16E"/>
-                                <include reference="Qbb-ZC-hoy"/>
-                                <include reference="pis-b2-1dj"/>
-                                <include reference="Emt-yN-1nH"/>
-                                <include reference="dwY-VD-FOY"/>
+                                <include reference="IUf-zW-fS6"/>
                                 <include reference="P8q-8B-uVr"/>
                                 <include reference="zk7-81-gor"/>
+                                <include reference="Emt-yN-1nH"/>
+                                <include reference="dwY-VD-FOY"/>
+                                <include reference="Qbb-ZC-hoy"/>
+                                <include reference="pis-b2-1dj"/>
+                                <include reference="cx3-mI-DLC"/>
+                                <include reference="ey1-77-16E"/>
                                 <include reference="gso-pz-tzr"/>
-                                <include reference="IUf-zW-fS6"/>
                             </mask>
                         </variation>
                     </view>

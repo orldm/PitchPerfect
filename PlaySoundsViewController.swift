@@ -21,11 +21,6 @@ class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        path = NSBundle.mainBundle().pathForResource("01122014-234308", ofType: ".wav")
-//        audioPlayer = AVAudioPlayer(contentsOfURL: NSURL.fileURLWithPath(path), error: nil)
-//        audioPlayer.enableRate = true
-//        audioPlayer.delegate = self
-        
         audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.fileURL, error: nil)
         audioPlayer.enableRate = true
         audioPlayer.delegate = self

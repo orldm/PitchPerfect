@@ -53,7 +53,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.prepareToRecord()
         audioRecorder.record()
         
-        
     }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!, successfully flag: Bool) {
